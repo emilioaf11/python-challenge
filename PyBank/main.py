@@ -3,13 +3,13 @@ import csv
 
 # 2. Using the open() function to open the budget_data.csv file.
 # This function returns a file object that can be used to read or write data to the file.
-with open("/Users/emilioaristeguiflores/python-challenge/PyBank/Resources/budget_data.csv") as csvfile:
+with open("/Users/emilioaristeguiflores/desktop/challenges/python-challenge/PyBank/Resources/budget_data.csv") as csvfile:
 
     # 3. Creating a csv.reader object using the csvfile object and specifying the delimiter used in the CSV file.
     # This object can be used to iterate over the rows of the CSV file and extract data.
     reader = csv.reader(csvfile, delimiter=",")
 
-    # 4. Don't read the header row 
+    # 4. Skip the header row 
     header = next(reader)
     
     # 5. Initialize variables
@@ -85,3 +85,15 @@ print(f"Greatest Increase in Profits: {greatest_increase_month} (${greatest_incr
 
 # 18. Print Greatest Decrease in Profits
 print(f"Greatest Decrease in Profits: {greatest_decrease_month} (${greatest_decrease})")
+
+# 19. Export to a txt file
+with open("./PyBank.txt", 'w') as txtfile:
+    txtfile.write(f"""
+    Financial Analysis
+    ----------------------------
+    Total Months:{total_months}
+    Total: {total_profit}
+    Average Change: $",round{average_change,2}
+    Greatest Increase in Profits: {greatest_increase_month} (${greatest_increase})
+    Greatest Decrease in Profits: {greatest_decrease_month} (${greatest_decrease})
+    """)
