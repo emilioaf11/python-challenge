@@ -16,7 +16,7 @@ The for loop counted all the months and profit changes to add them into the list
 
 The analysis should align with the following results:
 
-## Financial Analysis
+### Financial Analysis
 
 Total Months: 86
 Total: $22564198
@@ -39,7 +39,7 @@ The dictionaries served to count the votes for each candidate and the candidate
 
 The analysis should align with the following results:
 
-## Election Results
+### Election Results
 
 Total Votes: 369,711
 Charles Casper Stockham: 23.049% (85,213)
@@ -47,7 +47,10 @@ Diana DeGette: 73.812% (272,892)
 Raymon Anthony Doane: 3.139% (11,606)
 Winner: Diana DeGette
 
-## Running the Script
+## Contents
+
+
+## Getting Started
 
 To run the Python script and perform the vote counting analysis:
 
@@ -58,10 +61,26 @@ To run the Python script and perform the vote counting analysis:
 
 The scripts will print both analysis results to the terminal and export text files named "election_results.txt" and "budget_data.txt" with the same information.
 
+## Contributions
+
+If you would like to contribute to this project, you can follow these steps:
+
+1. Fork the repository.
+2. Create a new branch for your changes.
+3. Make your modifications and enhancements.
+4. Test your changes thoroughly.
+5. Submit a pull request, explaining the purpose and benefits of your modifications.
+
+Please ensure that your contributions align with the goals of the project and adhere to the coding standards and best practices.
+
 ## Note
 
 Ensure that you have the necessary permissions to read the dataset file and write the analysis results file in the execution directory.
 
 Feel free to modify the script or adapt it to fit your specific needs.
 
-Enjoy!
+## Contact
+
+If you have any questions, suggestions, or feedback, please feel free to contact me at emilioaristegui@outlook.com 
+
+Thank you for your interest in this project! Enjoy!
